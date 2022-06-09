@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>FlashCards Kanjis - Mi colección</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../style/style.css" title="style" />
+  <link rel="stylesheet" type="text/css" href="../alertify/css/alertify.css"/>
+  <link rel="stylesheet" type="text/css" href="../alertify/css/themes/default.css"/>
+
+  <script src="../alertify/jquery-3.6.0.min.js"></script>
+  <script src="../alertify/alertify.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="../index.html">FlashCards Kanjis</a></h1>
+          <h2>Estudia Kanjis creando tus colecciones.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../kanjis/noken5.html">Kanjis</a></li>
+          <li><a href="../kana/hiragana.html">Kana</a></li>
+          <li><a href="../examen/examenes.html">Ponte a prueba</a></li>
+          <li class="selected"><a href="micoleccion.html">Mi colección</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+      </div>
+      <div id="content">
+        <h1 id="nColeccion"></h1>
+        <script type="module" src="create_flashcard_micoleccion.js"></script>
+        <script type="module" src="micoleccion.js"></script>
+        <button id="boton_seleccionados">Eliminar seleccionados de mi colección</button>
+        <div id="flashcards"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

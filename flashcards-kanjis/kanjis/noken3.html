@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>FlashCards Kanjis - Kanjis</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../style/style.css" title="style" />
+  <link rel="stylesheet" type="text/css" href="../alertify/css/alertify.css"/>
+  <link rel="stylesheet" type="text/css" href="../alertify/css/themes/default.css"/>
+
+  <script src="../alertify/jquery-3.6.0.min.js"></script>
+  <script src="../alertify/alertify.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="../index.html">FlashCards Kanjis</a></h1>
+          <h2>Estudia Kanjis creando tus colecciones.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li class="selected"><a href="noken5.html">Kanjis</a></li>
+          <li><a href="../kana/hiragana.html">Kana</a></li>
+          <li><a href="../examen/examenes.html">Ponte a prueba</a></li>
+          <li><a href="../mi_coleccion/miscolecciones.html">Mis colecciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h2>Niveles</h2>
+        <ul>
+        <li><h4><a href="noken5.html">Noken 5</a></h4></li>
+        <li><h4><a href="noken4.html">Noken 4</a></h4></li>
+        <li><h4><a href="noken3.html">Noken 3</a></h4></li>
+        <li><h4><a href="noken2.html">Noken 2</a></h4></li>
+        <li><h4><a href="noken1.html">Noken 1</a></h4></li>
+      </ul>
+      </div>
+      <div id="content">
+        <h1 id="titulo_nivel">Noken 3</h1>
+        <script type="module" src="create_flashcard_noken.js"></script>
+        <script type="module" src="noken3.js"></script>
+        <select id="coleccionesOpciones"></select>
+        <button id="boton_seleccionados">Añadir seleccionados a la colección elegida</button>
+        <div id="flashcards"></div>
+      </div>
+  </div>
+</body>
+</html>
